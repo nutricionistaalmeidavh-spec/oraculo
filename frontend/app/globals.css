@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-rgb: 255, 255, 255;
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-rgb));
+}
+
+@layer components {
+  .zone-critical {
+    @apply bg-red-50 border-red-200 text-red-900;
+  }
+  .zone-high {
+    @apply bg-amber-50 border-amber-200 text-amber-900;
+  }
+  .zone-medium {
+    @apply bg-blue-50 border-blue-200 text-blue-900;
+  }
+}
